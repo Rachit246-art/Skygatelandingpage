@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Construction | Luxury Villa Builders in Bangalore</title>
+    <meta name="description" content="Premium villa construction, turnkey solutions, and modern architectural execution in Bangalore. Crafted with precision and transparency.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="#home" class="logo"><img src="images/logo.jpeg" alt="LuxeBuild Logo" style="height: 70px; width: auto; mix-blend-mode: multiply;"></a>
+        <nav class="nav-links" id="nav-links">
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#process">Process</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20getting%20a%20construction%20quote" target="_blank" class="header-cta">Get Quote</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <!-- Modal Pop-up -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-grid">
+                <div class="modal-image">
+                    <img src="images/hero-1.jpg" alt="Get a Quote">
+                </div>
+                <div class="modal-form">
+                    <h3>Special Offer!</h3>
+                    <p>Get a free architectural review and site analysis worth ₹25,000.</p>
+                    <form id="popup-form">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="Enter phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-btn">Claim Free Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Lightbox Modal -->
+    <div id="image-modal" class="modal" style="background-color: rgba(0,0,0,0.95); z-index: 3000;">
+        <span class="close-image-modal" style="position:absolute; top: 20px; right: 30px; font-size: 50px; color: white; cursor: pointer; transition: 0.3s; z-index: 3010;">&times;</span>
+        <img id="modal-image-display" src="" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 90%; max-height: 90vh; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.8);">
+    </div>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us</span>
+    </a>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider" id="home">
+        <div class="slider-container">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <div class="slide-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/hero-1.jpg');"></div>
+                <div class="container">
+                    <div class="hero-content reveal">
+                        <h1>Luxury Construction For Modern Bangalore Living</h1>
+                        <p>Premium villa construction, turnkey solutions, and modern architectural execution crafted with precision and transparency.</p>
+                        <div class="hero-btns">
+                            <a href="https://wa.me/919876543210" class="btn btn-primary">Get Free Consultation</a>
+                            <a href="#projects" class="btn btn-secondary">Book Site Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/hero-2.jpg');"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Exquisite Architecture & Sustainable Designs</h1>
+                        <p>Vastu-compliant, modern architectural planning that blends luxury with functionality for your dream home.</p>
+                        <div class="hero-btns">
+                            <a href="https://wa.me/919876543210" class="btn btn-primary">Start Designing</a>
+                            <a href="#projects" class="btn btn-secondary">View Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/hero-3.jpg');"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Turnkey Solutions: From Vision to Handover</h1>
+                        <p>Experience a stress-free building journey with our complete end-to-end project management services.</p>
+                        <div class="hero-btns">
+                            <a href="https://wa.me/919876543210" class="btn btn-primary">Get a Quote</a>
+                            <a href="#process" class="btn btn-secondary">How It Works</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section id="contact" class="consultation-section">
+        <div class="container">
+            <div class="consultation-grid">
+                <div class="consultation-info reveal">
+                    <h2>Start Your Dream Project Today</h2>
+                    <p>Ready to build your masterpiece? Fill out the form and our experts will get back to you with a personalized consultation.</p>
+                    <div class="trust-line-consult">
+                        <div class="trust-item"><i class="fas fa-check-circle"></i> Free Site Analysis</div>
+                        <div class="trust-item"><i class="fas fa-check-circle"></i> Detailed Quotation</div>
+                        <div class="trust-item"><i class="fas fa-check-circle"></i> Architectural Review</div>
+                    </div>
+                    <img src="images/why-us.jpg" alt="Construction" style="width: 100%; border-radius: 20px; margin-top: 30px; box-shadow: var(--shadow);">
+                </div>
+                <div class="consultation-form-card reveal">
+                    <div class="hero-form">
+                        <h3>Request Consultation</h3>
+                        <form action="#">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" placeholder="Enter phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Project Type</label>
+                                <select required>
+                                    <option value="" disabled selected>Select project type</option>
+                                    <option>Luxury Villa</option>
+                                    <option>Renovation</option>
+                                    <option>Architectural Design</option>
+                                    <option>Interior Execution</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Location</label>
+                                <input type="text" placeholder="Enter project location" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Budget Range</label>
+                                <select required>
+                                    <option value="" disabled selected>Select budget</option>
+                                    <option>₹50L - ₹1Cr</option>
+                                    <option>₹1Cr - ₹5Cr</option>
+                                    <option>₹5Cr+</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary form-btn">Get Started Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <img src="images/project-1.jpg" alt="About Us">
+                    <div class="experience-badge">
+                        <h3>10+</h3>
+                        <p>Years of Excellence</p>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <span class="subtitle">About LuxeBuild</span>
+                    <h2>We Build Luxury With Integrity and Precision</h2>
+                    <p>At LuxeBuild, we don't just build houses; we craft homes that resonate with your lifestyle. With over a decade of experience in Bangalore's premium construction market, we have established ourselves as the go-to partner for luxury villas and turnkey solutions.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Award Winning Designs</h4>
+                                <p>Our architectural team creates unique, award-worthy masterpieces.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Certified Quality</h4>
+                                <p>We use only the highest grade materials with multi-stage quality checks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/919876543210" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h2>150+</h2>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <h2>10+</h2>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-card">
+                    <h2>12L+</h2>
+                    <p>Sq Ft Delivered</p>
+                </div>
+                <div class="stat-card">
+                    <h2>98%</h2>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2>Our Premium Construction Services</h2>
+            <p>We provide end-to-end solutions to bring your dream villa to life with absolute perfection.</p>
+        </div>
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-home"></i></div>
+                    <h3>Luxury Villa Construction</h3>
+                    <p>High-end custom villa execution with premium finishing and state-of-the-art features.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-key"></i></div>
+                    <h3>Turnkey Construction</h3>
+                    <p>Complete end-to-end project management from foundation to final finishing.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-drafting-compass"></i></div>
+                    <h3>Architectural Design</h3>
+                    <p>Modern and vastu-compliant planning tailored to your lifestyle and preferences.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-couch"></i></div>
+                    <h3>Interior Execution</h3>
+                    <p>Luxury interiors crafted for elegant living with bespoke furniture and lighting.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-tools"></i></div>
+                    <h3>Renovation & Remodeling</h3>
+                    <p>Upgrade your existing spaces with modern aesthetics and functional improvements.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon"><i class="fas fa-hard-hat"></i></div>
+                    <h3>Project Consulting</h3>
+                    <p>Expert advice on material selection, budget optimization, and site management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" style="background: var(--light-blue);">
+        <div class="section-header">
+            <h2>Projects That Define Excellence</h2>
+            <p>A glimpse into our portfolio of luxury villas and premium residential spaces.</p>
+        </div>
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/project-1.jpg" alt="Modern Villa">
+                    <div class="project-overlay">
+                        <h3>Modern Villa — Whitefield</h3>
+                        <p>Contemporary luxury villa with premium elevation and smart interiors.</p>
+                        <div style="margin-top: 10px; font-size: 14px; opacity: 0.8;">
+                            <span><i class="fas fa-expand"></i> 4,500 Sq Ft</span> | <a href="https://maps.google.com/?q=Whitefield+Bangalore" target="_blank" style="color: white; text-decoration: underline;"><i class="fas fa-map-marker-alt"></i> Whitefield</a>
+                        </div>
+                        <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20viewing%20the%20Modern%20Villa%20in%20Whitefield" target="_blank" class="btn btn-primary" style="margin-top: 20px; padding: 10px 20px; font-size: 12px;">View Property</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/project-2.jpg" alt="Luxe Estate">
+                    <div class="project-overlay">
+                        <h3>Minimalist Estate — Sarjapur</h3>
+                        <p>Open-concept architectural marvel focusing on natural light and luxury.</p>
+                        <div style="margin-top: 10px; font-size: 14px; opacity: 0.8;">
+                            <span><i class="fas fa-expand"></i> 6,200 Sq Ft</span> | <a href="https://maps.google.com/?q=Sarjapur+Bangalore" target="_blank" style="color: white; text-decoration: underline;"><i class="fas fa-map-marker-alt"></i> Sarjapur</a>
+                        </div>
+                        <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20viewing%20the%20Minimalist%20Estate%20in%20Sarjapur" target="_blank" class="btn btn-primary" style="margin-top: 20px; padding: 10px 20px; font-size: 12px;">View Property</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/project-3.jpg" alt="Grand Residence">
+                    <div class="project-overlay">
+                        <h3>Grand Residence — Indiranagar</h3>
+                        <p>A fusion of traditional luxury and modern functional design.</p>
+                        <div style="margin-top: 10px; font-size: 14px; opacity: 0.8;">
+                            <span><i class="fas fa-expand"></i> 5,800 Sq Ft</span> | <a href="https://maps.google.com/?q=Indiranagar+Bangalore" target="_blank" style="color: white; text-decoration: underline;"><i class="fas fa-map-marker-alt"></i> Indiranagar</a>
+                        </div>
+                        <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20viewing%20the%20Grand%20Residence%20in%20Indiranagar" target="_blank" class="btn btn-primary" style="margin-top: 20px; padding: 10px 20px; font-size: 12px;">View Property</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section>
+        <div class="container">
+            <div class="two-col-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                <div>
+                    <img src="images/why-us.jpg" alt="Quality" style="width: 100%; border-radius: 30px; box-shadow: var(--shadow);">
+                </div>
+                <div>
+                    <h2 style="font-size: 36px; margin-bottom: 30px; color: var(--secondary-blue);">Why Clients Choose Us</h2>
+                    <div class="benefits-grid" style="grid-template-columns: 1fr;">
+                        <div class="benefit-item">
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>Transparent Pricing</h4>
+                                <p>Detailed quotations with no hidden costs or surprises.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>Premium Quality Materials</h4>
+                                <p>Only trusted brands and long-lasting materials for your home.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>Dedicated Project Management</h4>
+                                <p>Single point of contact from start to finish for seamless coordination.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>Timely Delivery</h4>
+                                <p>Structured execution with milestone tracking to ensure on-time handover.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>Modern Design Approach</h4>
+                                <p>Luxury-focused architecture and finishing that stands the test of time.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="check"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>End-to-End Solutions</h4>
+                                <p>From planning to handover, we handle everything for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Construction Process -->
+    <section id="process" style="background: var(--light-blue);">
+        <div class="section-header">
+            <h2>Our Simple 5-Step Process</h2>
+            <p>We make the complex process of building a home simple and stress-free.</p>
+        </div>
+        <div class="container">
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-num">1</div>
+                    <h4>Consultation</h4>
+                    <p>Understanding your vision, requirements, and budget.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">2</div>
+                    <h4>Planning & Design</h4>
+                    <p>Architecture, approvals, and detailed estimation.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">3</div>
+                    <h4>Construction</h4>
+                    <p>Execution with high-quality monitoring and materials.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">4</div>
+                    <h4>Interiors & Finishing</h4>
+                    <p>Premium finishing and detailing to match your style.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">5</div>
+                    <h4>Handover</h4>
+                    <p>Final inspection and delivery of your dream home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section style="padding: 60px 0;">
+        <div class="section-header" style="margin-bottom: 40px;">
+            <h2>Built With Trusted Brands</h2>
+        </div>
+        <div class="brands-slider">
+            <div class="brands-track">
+                <span class="brand-name">ULTRATECH</span>
+                <span class="brand-name">ASIAN PAINTS</span>
+                <span class="brand-name">KAJARIA</span>
+                <span class="brand-name">HAVELLS</span>
+                <span class="brand-name">JAQUAR</span>
+                <span class="brand-name">SCHNEIDER</span>
+                <!-- Duplicate for seamless scroll -->
+                <span class="brand-name">ULTRATECH</span>
+                <span class="brand-name">ASIAN PAINTS</span>
+                <span class="brand-name">KAJARIA</span>
+                <span class="brand-name">HAVELLS</span>
+                <span class="brand-name">JAQUAR</span>
+                <span class="brand-name">SCHNEIDER</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="section-header">
+            <h2>What Our Clients Say</h2>
+            <p>Our commitment to quality has earned us the trust of hundreds of families.</p>
+        </div>
+        <div class="container">
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div style="color: #fbbf24; margin-bottom: 15px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"The transparency and quality exceeded our expectations. Our villa in Whitefield was delivered exactly as promised with premium finishing."</p>
+                    <div class="client-info">
+                        <img src="images/client-1.jpg" alt="Client" class="client-img">
+                        <div>
+                            <strong>Rahul Sharma</strong>
+                            <p style="font-size: 12px; color: var(--text-light);">Villa Owner, Whitefield</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div style="color: #fbbf24; margin-bottom: 15px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Building a home is stressful, but their turnkey approach made it so easy. Every milestone was tracked and communicated perfectly."</p>
+                    <div class="client-info">
+                        <img src="images/client-2.jpg" alt="Client" class="client-img">
+                        <div>
+                            <strong>Priya Nair</strong>
+                            <p style="font-size: 12px; color: var(--text-light);">Homeowner, Sarjapur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div style="color: #fbbf24; margin-bottom: 15px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Professional team, modern design approach, and absolute commitment to quality. Highly recommended for premium construction in Bangalore."</p>
+                    <div class="client-info">
+                        <img src="images/client-3.jpg" alt="Client" class="client-img">
+                        <div>
+                            <strong>Anil Kumar</strong>
+                            <p style="font-size: 12px; color: var(--text-light);">Tech Lead, Indiranagar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background: var(--light-blue);">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">What is the construction cost in Bangalore? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Construction costs typically range from ₹1,800 to ₹3,500 per sq ft depending on the quality of materials and finishes selected.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you provide turnkey solutions? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Yes, we provide end-to-end turnkey solutions including planning, approvals, construction, and interiors.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How long does construction take? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">A typical luxury villa construction takes between 10 to 14 months from the start of foundation work.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can designs be customized? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Absolutely. We specialize in bespoke architectural designs tailored specifically to your needs and taste.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you assist with approvals? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer">Yes, our team handles all local body approvals and documentation as part of our turnkey service.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#home" class="logo" style="margin-bottom: 20px; display: block;"><img src="images/logo.jpeg" alt="LuxeBuild Logo" style="height: 60px; width: auto; border-radius: 8px;"></a>
+                    <p>Creating luxury landmarks across Bangalore with a focus on quality, transparency, and architectural excellence.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Portfolio</a></li>
+                        <li><a href="#process">Our Process</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Villa Construction</a></li>
+                        <li><a href="#">Turnkey Solutions</a></li>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Renovations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> contact@luxebuild.in</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Indiranagar, Bangalore</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LuxeBuild Construction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hero Slider Logic
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        let slideInterval = setInterval(nextSlide, 5000);
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, 5000);
+            });
+        });
+
+        // Reveal on Scroll Animation
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Mobile Menu Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navLinksMenu = document.getElementById('nav-links');
+
+        if (mobileMenuBtn && navLinksMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinksMenu.classList.toggle('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (navLinksMenu.classList.contains('active')) {
+                    icon.classList.replace('fa-bars', 'fa-times');
+                } else {
+                    icon.classList.replace('fa-times', 'fa-bars');
+                }
+            });
+
+            // Close menu when a link is clicked
+            navLinksMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinksMenu.classList.remove('active');
+                    if (mobileMenuBtn.querySelector('i')) {
+                        mobileMenuBtn.querySelector('i').classList.replace('fa-times', 'fa-bars');
+                    }
+                });
+            });
+        }
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                const icon = item.querySelector('i');
+                
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                } else {
+                    answer.style.display = 'block';
+                    icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                }
+            });
+        });
+
+        // Modal Logic (Services Pop-up)
+        const modal = document.getElementById('service-modal');
+        const closeModal = document.querySelector('.close-modal');
+        const servicesSection = document.getElementById('services');
+        let modalShown = false;
+
+        const modalObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !modalShown) {
+                    modal.style.display = 'block';
+                    modalShown = true;
+                }
+            });
+        }, { threshold: 0.1 });
+
+        if (servicesSection) {
+            modalObserver.observe(servicesSection);
+        }
+
+        closeModal.onclick = () => {
+            modal.style.display = 'none';
+        }
+
+        // Image Lightbox Logic
+        const imageModal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-image-display');
+        const closeImgModal = document.querySelector('.close-image-modal');
+
+        document.querySelectorAll('.project-card img').forEach(img => {
+            img.style.cursor = 'zoom-in';
+            img.addEventListener('click', function() {
+                imageModal.style.display = 'block';
+                modalImg.src = this.src;
+            });
+        });
+
+        closeImgModal.onclick = () => {
+            imageModal.style.display = 'none';
+        }
+
+        window.onclick = (event) => {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+            if (event.target == imageModal) {
+                imageModal.style.display = 'none';
+            }
+        }
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

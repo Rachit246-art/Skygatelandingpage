@@ -67,8 +67,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
+    background: var(--white);
     z-index: 1000;
     border-bottom: 1px solid var(--border-color);
 }
@@ -814,7 +813,9 @@ footer {
     max-width: 900px;
     border-radius: 30px;
     position: relative;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 90vh;
     animation: modalIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -878,10 +879,10 @@ footer {
         grid-template-columns: 1fr;
     }
     .modal-image {
-        height: 200px;
+        height: 150px;
     }
     .modal-form {
-        padding: 30px;
+        padding: 25px;
     }
 }
 
@@ -911,8 +912,7 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(10px);
+        background: var(--white);
         flex-direction: column;
         padding: 30px 20px;
         text-align: center;
@@ -942,23 +942,30 @@ footer {
     .hero-btns { flex-direction: column; }
     header { padding: 10px 5%; }
     .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px 20px;
+        grid-template-columns: 1fr;
+        gap: 40px;
         text-align: left;
     }
     .stats-grid {
         grid-template-columns: 1fr 1fr;
         gap: 30px 10px;
     }
-    .process-grid, .testimonials-grid {
+    .process-grid, .testimonials-grid, .projects-grid, .services-grid {
         grid-template-columns: 1fr;
+    }
+    .project-overlay {
+        transform: translateY(0);
+        padding: 20px;
+    }
+    .project-card {
+        height: 420px;
     }
     .brands-track {
         gap: 40px;
     }
     .modal-content {
         width: 95%;
-        margin: 10% auto;
+        margin: 5% auto;
     }
     .close-image-modal {
         top: 10px !important;
